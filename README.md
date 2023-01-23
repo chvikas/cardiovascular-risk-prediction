@@ -1,7 +1,10 @@
 <h1 align="center"> Cardiovascular Risk Prediction </h1>
-<h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
 
-![image](https://img.freepik.com/free-vector/human-internal-organ-with-heart_1308-108889.jpg?w=740&t=st=1674130094~exp=1674130694~hmac=99baf9a75b8b3c84562894523dfaa805e5dd98fafe43966c5dbcdc82d90c7e6e)
+<p align="center" width="100%">
+    <img width="75%" src="https://img.freepik.com/free-vector/human-internal-organ-with-heart_1308-108889.jpg?w=740&t=st=1674130094~exp=1674130694~hmac=99baf9a75b8b3c84562894523dfaa805e5dd98fafe43966c5dbcdc82d90c7e6e">
+</p>
+
+<h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
 
 <p>The project categorized the patients based on a 10-year risk of future coronary heart disease (CHD).</p>
 
@@ -9,16 +12,35 @@
 
 <h2> :floppy_disk: Table of Content</h2>
 
-  * [Dataset Information](#dataset-information)
-  * [Overview](#overview)
-  * [Technologies Used](#technologies-used)
+  * Overview
+  * Dataset Information
+  * EDA and Feature Engineering
+  * Model
+  * Result
 
 This project is aimed at categorizing a patient based on the medical history if the patient has any risk of having a cardiovascular disease in the next 10 years.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<h2> Overview:</h2>
+
+With the help of existing health data this project build a classification Machine Learning (ML) algorithm, it classifies the patients based on the possibility of encountering the cardiovascular risk in the next 10 years. 
 
 
+<h3> Tools Used: <h3>
+
+1. Python
+
+2. Numpy and Pandas for data cleaning
+
+3. Data visualization
+
+4. Sklearn for model building
+
+5.Jupiter Notebook
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <h2> :book: Dataset information:</h2>
 
 The final dataset has the following 16 features (1 dependent + 15 independent):
@@ -57,22 +79,16 @@ The final dataset has the following 16 features (1 dependent + 15 independent):
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> Overview:</h2>
+<h2> EDA and Feature Engineering:</h2>
 
-With the help of existing health data this project build a classification Machine Learning (ML) algorithm, it classifies the patients based on the possibility of encountering the cardiovascular risk in the next 10 years. 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<h2> Model:</h2>
 
-<h3> Tools Used: <h3>
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-1. Python
+<h2> Result:</h2>
 
-2. Numpy and Pandas for data cleaning
-
-3. Data visualization
-
-4. Sklearn for model building
-
-5.Jupiter Notebook
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- CREDITS -->
