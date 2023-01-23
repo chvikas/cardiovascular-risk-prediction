@@ -1,7 +1,7 @@
 <h1 align="center"> Cardiovascular Risk Prediction </h1>
 
 <p align="center" width="100%">
-    <img width="75%" src="https://img.freepik.com/free-vector/human-internal-organ-with-heart_1308-108889.jpg?w=740&t=st=1674130094~exp=1674130694~hmac=99baf9a75b8b3c84562894523dfaa805e5dd98fafe43966c5dbcdc82d90c7e6e">
+    <img width="60%" src="https://img.freepik.com/free-vector/human-internal-organ-with-heart_1308-108889.jpg?w=740&t=st=1674130094~exp=1674130694~hmac=99baf9a75b8b3c84562894523dfaa805e5dd98fafe43966c5dbcdc82d90c7e6e">
 </p>
 
 <h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
@@ -10,7 +10,7 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> :floppy_disk: Table of Content</h2>
+<h2> Table of Content</h2>
 
   * Overview
   * Dataset Information
@@ -22,7 +22,7 @@ This project is aimed at categorizing a patient based on the medical history if 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> Overview:</h2>
+<h2> Overview</h2>
 
 With the help of existing health data this project build a classification Machine Learning (ML) algorithm, it classifies the patients based on the possibility of encountering the cardiovascular risk in the next 10 years. 
 
@@ -37,21 +37,28 @@ With the help of existing health data this project build a classification Machin
 
 4. Sklearn for model building
 
-5.Jupiter Notebook
+5. Jupiter Notebook
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-<h2> :book: Dataset information:</h2>
+<h2> Dataset information</h2>
+
+Raw Dataset:
+<p align="left" width="100%">
+    <img width="80%" src="https://user-images.githubusercontent.com/90998859/214115913-fc8cc895-a30e-42b5-8655-ca2fb42aea3b.png">
+</p>
+
 
 The final dataset has the following 16 features (1 dependent + 15 independent):
+<p align="left" width="100%">
+    <img width="80%" src="https://user-images.githubusercontent.com/90998859/214116796-bc0c6a76-df1b-4ba6-b237-24e30b40791a.png">
+</p>
 
 * age
 
 * education
 
 * sex
-
-* is_smoking (a smoker or not a smoker)
 
 * cigsPerDay (number of cigarettes smoked per day)
 
@@ -77,17 +84,70 @@ The final dataset has the following 16 features (1 dependent + 15 independent):
 
 * TenYearCHD (Ten Years Cardiovascular Risk) - Dependent Feature (0 - no risk, 1 - have risk)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<h2> EDA and Feature Engineering:</h2>
+* pulse_pressure (difference between Systolic BP and Diastolic BP)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> Model:</h2>
+<h2> EDA and Feature Engineering</h2>
+
+The following steps were followed for EDA and Feature Engineering
+
+* Missing Value Treatment (multiple approach)
+
+* Univariate Analysis on numerical features (along with Central Tendency)
+
+* Analyzed datast using graphical and non-graphical methods - (graphical method includes scatter plot, line chart, bar graph, etc)
+
+* Feature Selection
+
+* Some Features like 'is_smoking' were dropped
+
+* New Feature created (pulse_rate)
+
+* Heat map was used to know the correlation among features, and those with higher correlation were dropped.
+
+<p align="left" width="100%">
+   <img width="45%" src="https://user-images.githubusercontent.com/90998859/214129170-4993ec3e-da02-462a-b5c3-4810bdbd3a13.png">
+ </p>
+
+
+* Employed 'label encoding' and 'One-hot encoding' to get numerical features from label and categorical features.
+
+* Employed SMOTE (Synthetic Minority Oversampling Technique) to oversample the classes
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> Result:</h2>
+<h2> Model </h2>
+
+* The dataset was trained on 6 algorithm with k-nn with hyper-parameter tuning as the base algorithm. 
+
+* Other algorithm used are: Decision Tree Classifier, Logistic Regression Classifier, Naive Bayes Classifier, Support Vector Classifier (SVC) and Random Forest
+
+* Employed Hyper-parameter Tuning using GridSearchCV on knn
+
+* Every algorithm was evaluated using Confusion Matrix (both on Train and Test set)
+    
+<p align="left" width="100%">
+   <img width="30%" src="https://user-images.githubusercontent.com/90998859/214125568-be738961-153f-4dff-9cd1-abd0fb41e7b1.png">
+</p>
+
+* Classification Report for every algorithm was generated (both on Train and Test set)
+    It provides accuracy, precision, and recall for better decision making based on the use case.
+<p align="left" width="100%">
+    <img width="40%" src="https://user-images.githubusercontent.com/90998859/214124372-b3f23e2f-1a82-40e2-af6b-5d3302a0e0c0.png">
+ </p>
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2> Result</h2>
+
+<p align="left" width="100%">
+    <img width="70%" src="https://user-images.githubusercontent.com/90998859/214122746-a42ae7b3-0fbe-49a3-924b-48b155c9d3f2.png">
+ 
+</p>
+
+knn (k-Nearest Neighbors) with Hyper-parameter Tuning using GridSearchCV has achieved the highest AUCROC Score of nearly 89.3%.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
